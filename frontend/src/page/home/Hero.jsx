@@ -2,6 +2,8 @@ import React from "react";
 
 export default function Hero() {
   return (
+    <div className="m-auto py-5">
+
     <div className="flex flex-col justify-center items-center">
       <div>
         <img className="w-4xl" src="/assets/landing.png" />
@@ -18,6 +20,7 @@ export default function Hero() {
           Sign up for free
         </button>
       </div>
+    </div>
     </div>
   );
 }
