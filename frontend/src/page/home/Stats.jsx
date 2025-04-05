@@ -27,7 +27,7 @@ export default function Stats() {
 
   return (
     <div className="m-auto pb-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
         <div>
           <div className="text-4xl text-gray-800 font-semibold mb-10">
             Trust with confidence
@@ -42,8 +42,8 @@ export default function Stats() {
         <div>
           <img src="assets/ecosystem.png"  className="w-3xl"/>
           <div className="text-blue-600 visited:text-purple-600 flex gap-10 items-center justify-center mt-10">
-            <Link to='/home'>Explore our products <i class="fa-solid fa-arrow-right"></i></Link>
-            <Link to='/home'>Try Kite demo <i class="fa-solid fa-arrow-right"></i></Link>
+            <Link to='/home'>Explore our products <i className="fa-solid fa-arrow-right"></i></Link>
+            <Link to='/home'>Try Kite demo <i className="fa-solid fa-arrow-right"></i></Link>
           </div>
 
         </div>
