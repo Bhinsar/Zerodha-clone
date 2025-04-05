@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="m-auto pb-40">
 
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mt-12">
       <div>
         <img className="w-3xl" src="/assets/landing.png" />
       </div>

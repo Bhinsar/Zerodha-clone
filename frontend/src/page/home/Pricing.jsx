@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Pricing() {
   return (
     <div className="m-auto pb-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
           <div className="text-4xl text-gray-800 font-semibold mb-8">
             Unbeatable pricing
@@ -14,10 +14,10 @@ export default function Pricing() {
             in India. Flat fees and no hidden charges.
           </div>
           <Link to="/home" className="text-blue-600">
-            See pricing <i class="fa-solid fa-arrow-right"></i>
+            See pricing <i className="fa-solid fa-arrow-right"></i>
           </Link>
         </div>
-        <div className="grid grid-cols-4 gap-1 items-center">
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-1 items-center">
           <div className="relative col-span-1 w-40 items-center">
             <img src="/assets/pricing-eq.svg" className="w-[80%]" />
             <p className="absolute top-10 left-[100px] text-[10px] text-gray-500/90">
@@ -25,7 +25,7 @@ export default function Pricing() {
             </p>
           </div>
           <div className="col-span-2 items-center relative">
-            <img src="/assets/pricing-eq.svg" className="w-[50%]" />
+            <img src="/assets/pricing-eq.svg" className="w-32" />
             <p className="absolute top-10 left-[110px] text-[10px] text-gray-500/90">
               Free equity delivery and direct mutual funds
             </p>
