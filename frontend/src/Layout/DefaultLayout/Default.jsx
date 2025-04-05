@@ -1,14 +1,14 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom'; // Import Outlet
-import Navbar from '../../components/navbar/Navbar';
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "../../components/navbar/Navbar";
 
-export default function Default() {
+export default function DefaultLayout() {
   return (
     <>
       <Navbar />
-      <div className='mx-auto my-0'>
-      <Outlet />
-      </div>
+      <main className="px-4 sm:px-8 md:px-10 lg:px-52 py-6">
+        <Outlet />
+      </main>
     </>
   );
 }
