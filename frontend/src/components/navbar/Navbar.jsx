@@ -25,8 +25,7 @@ export default function Navbar() {
           <NavLink
             key={index}
             to={item.to}
-            className="hover:text-black active:text-blue-500 transition duration-200"
-
+            className="hover:text-black transition"
           >
             {item.name}
           </NavLink>
