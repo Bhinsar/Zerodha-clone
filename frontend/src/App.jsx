@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Default from "./Layout/DefaultLayout/Default";
 import HomePage from "./page/home/HomePage";
 import PageNoFound from "./page/Page-not-found/PageNoFound";
+import AboutPage from "./page/about/AboutPage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route element={<Default />}>
           <Route path="/home" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<PageNoFound />} />
         </Route>
       </Routes>
