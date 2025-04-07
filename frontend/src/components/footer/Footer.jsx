@@ -16,15 +16,15 @@ export default function Footer() {
             All rights reserved.
           </div>
           <div className="flex border-b-1 mb-6 py-6 w-[14rem] gap-4 text-[20px]">
-            <i class="fa-brands fa-x-twitter cursor-pointer"></i>
-            <i class="fa-brands fa-square-facebook cursor-pointer"></i>
-            <i class="fa-brands fa-instagram cursor-pointer"></i>
-            <i class="fa-brands fa-linkedin-in cursor-pointer"></i>
+            <i className="fa-brands fa-x-twitter cursor-pointer"></i>
+            <i className="fa-brands fa-square-facebook cursor-pointer"></i>
+            <i className="fa-brands fa-instagram cursor-pointer"></i>
+            <i className="fa-brands fa-linkedin-in cursor-pointer"></i>
           </div>
           <div className="flex gap-4 text-[20px]">
-            <i class="fa-brands fa-youtube cursor-pointer"></i>
-            <i class="fa-brands fa-whatsapp cursor-pointer"></i>
-            <i class="fa-brands fa-telegram cursor-pointer"></i>
+            <i className="fa-brands fa-youtube cursor-pointer"></i>
+            <i className="fa-brands fa-whatsapp cursor-pointer"></i>
+            <i className="fa-brands fa-telegram cursor-pointer"></i>
           </div>
         </div>
         <div>
