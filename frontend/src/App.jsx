@@ -5,7 +5,7 @@ import PageNoFound from "./page/Page-not-found/PageNoFound";
 import AboutPage from "./page/about/AboutPage";
 import ProductPage from "./page/products/ProductPage";
 import PricingPage from "./page/pricing/PricingPage";
-
+import SupportPage from "./page/support/SupportPage"; 
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/price" element={<PricingPage />} />
+          <Route path="/support" element={<SupportPage />} />
           <Route path="*" element={<PageNoFound />} />
         </Route>
       </Routes>
