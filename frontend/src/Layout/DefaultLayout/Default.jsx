@@ -7,7 +7,7 @@ export default function DefaultLayout() {
   return (
     <>
       <Navbar />
-      <main className="px-4 sm:px-8 md:px-10 lg:px-52 py-6">
+      <main className="px-4 sm:px-8 md:px-10 lg:px-30 py-6">
         <Outlet />
       </main>
       <Footer/>

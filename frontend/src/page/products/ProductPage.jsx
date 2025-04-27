@@ -37,13 +37,33 @@ export default function ProductPage() {
       appleStore: "/home",
     },
   ];
+
+  const RightImageContent = [
+    {
+      image: "/assets/console.png",
+      title: "Console",
+      content:
+        "The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations.",
+        viewTitle: "Learn more ",
+        viewLink: '/home'
+    },
+    {
+      image: "/assets/landing.svg",
+      title: "Kite Connect API",
+      content:
+        "Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase.",
+        viewTitle: "Kite Connect",
+        viewLink: '/home'
+    },
+  ];
+
   return (
     <>
       <Hero />
       <LeftImage {...LeftImageContent[0]} />
-      <RightImage />
+      <RightImage {...RightImageContent[0]}/>
       <LeftImage {...LeftImageContent[1]} />
-      <RightImage />
+      <RightImage {...RightImageContent[1]}/>
       <LeftImage {...LeftImageContent[2]} />
       <Universe />
     </>
