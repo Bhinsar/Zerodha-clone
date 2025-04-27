@@ -11,17 +11,17 @@ export default function LeftImage({
   appleStore,
 }) {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center lg:gap-8 py-20 px-4">
+    <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center lg:gap-10 mt-10 px-4">
       <div className="col-span-2">
         <Link to="/home">
           <img src={image} />
         </Link>
       </div>
-      <div>
-        <div className="text-[2rem] mt-11 text-gray-700 font-[500]">
+      <div className="flex flex-col justify-end">
+        <div className="text-[2rem] text-gray-700 font-[500] ">
           {title}
         </div>
-        <p className="text-[1rem] text-gray-600 ">{content}</p>
+        <p className="text-[1rem] mt-8 text-gray-600 ">{content}</p>
         <div className="flex gap-4 py-3">
           <Link to={tryDemo} className="text-blue-600">
             Try Demo <i className="fa-solid fa-arrow-right"></i>
