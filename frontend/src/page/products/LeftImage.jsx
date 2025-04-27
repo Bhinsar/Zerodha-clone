@@ -22,6 +22,22 @@ export default function LeftImage({
           {title}
         </div>
         <p className="text-[1rem] text-gray-600 ">{content}</p>
+        <div className="flex gap-4 py-3">
+          <Link to={tryDemo} className="text-blue-600">
+            Try Demo <i className="fa-solid fa-arrow-right"></i>
+          </Link>
+          <Link to={learnMore} className="text-blue-600">
+            Learn More <i className="fa-solid fa-arrow-right"></i>
+          </Link>
+        </div>
+        <div className="flex gap-4 py-3">
+          <Link to={playStore}>
+            <img src="/assets/googlePlayBadge.svg" />
+          </Link>
+          <Link to={appleStore}>
+            <img src="/assets/appstoreBadge.svg" />
+          </Link>
+        </div>
       </div>
     </div>
   );

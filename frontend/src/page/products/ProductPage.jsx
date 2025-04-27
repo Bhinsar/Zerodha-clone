@@ -16,12 +16,35 @@ export default function ProductPage() {
       playStore: "/home",
       appleStore: "/home",
     },
+    {
+      image: "/assets/coin.png",
+      title: "Coin",
+      content:
+        "Buy direct mutual funds online, commission-free, delivered directly to your Demat account. Enjoy the investment experience on your Android and iOS devices.",
+      tryDemo: "/home",
+      learnMore: "/home",
+      playStore: "/home",
+      appleStore: "/home",
+    },
+    {
+      image: "/assets/varsity-products.png",
+      title: "Coin",
+      content:
+        "An easy to grasp, collection of stock market lessons with in-depth coverage and illustrations. Content is broken down into bite-size cards to help you learn on the go.",
+      tryDemo: "/home",
+      learnMore: "/home",
+      playStore: "/home",
+      appleStore: "/home",
+    },
   ];
   return (
     <>
       <Hero />
       <LeftImage {...LeftImageContent[0]} />
       <RightImage />
+      <LeftImage {...LeftImageContent[1]} />
+      <RightImage />
+      <LeftImage {...LeftImageContent[2]} />
       <Universe />
     </>
   );
