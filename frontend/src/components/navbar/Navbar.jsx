@@ -13,11 +13,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full shadow px-6 md:px-20 py-4 flex items-center justify-between">
+    <nav className="w-full shadow px-8 md:px-32 py-4 flex items-center justify-between">
       {/* Logo */}
-      <div className="w-32">
-        <img src="/assets/logo.svg" alt="Logo" className="w-full" />
-      </div>
+      <NavLink to="/">
+        <div className="w-32">
+          <img src="/assets/logo.svg" alt="Logo" className="w-full" />
+        </div>
+      </NavLink>
 
       {/* Desktop Nav */}
       <div className="hidden md:flex gap-10 text-gray-600 font-medium">
