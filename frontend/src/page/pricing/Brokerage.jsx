@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Brojkrage() {
+export default function Brokerage() {
   return (
     <div className='grid grid-cols-3 mt-10'>
       <div className='col-span-2'>
