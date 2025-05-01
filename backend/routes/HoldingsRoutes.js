@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const HoldingController = require("../controller/HoldingController");
+const { AddHoldings, getAllHoldings } = require("../controller/HoldingController");
 
-router.post("/add", HoldingController.AddHoldings);
+// router.get("/add", AddHoldings)
+router.get("/get-all-holdings", getAllHoldings);
 
 module.exports = router;

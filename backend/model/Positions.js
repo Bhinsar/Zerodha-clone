@@ -1,4 +1,5 @@
 const { Schema } = require("mongoose");
+const mongoose = require("mongoose");
 
 const positionsSchema = new Schema({
   product: String,

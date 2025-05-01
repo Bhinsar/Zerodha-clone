@@ -6,7 +6,7 @@ export default function Hero() {
 
     <div className="flex flex-col justify-center items-center mt-12">
       <div>
-        <img className="w-3xl" src="/assets/landing.png" />
+        <img className="w-3xl" src="/assets/landing.png" alt="hero image"/>
       </div>
       <div className="flex flex-col justify-center items-center gap-5 text-center">
         <div className="text-5xl mt-14 text-gray-700 font-semibold">

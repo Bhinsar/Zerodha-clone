@@ -1,7 +1,17 @@
-import React from "react";
-import { holdings } from "../data/data";
+import React, { useState, useEffect } from "react";
+  import axios from "axios";
 
-const Holdings = () => {
+  const Holdings = () => {
+    const [holdings, setHoldings] = useState([]);
+
+  useEffect(() => {
+    const fetchHoldings = async () => {
+      const response = await axios.get("http://localhost:8080/get-all-holdings");
+      setHoldings(response.data);
+    }
+    fetchHoldings();
+  }, []);
+
   return (
     <>
       <h3 className="title">Holdings ({holdings.length})</h3>
@@ -46,13 +56,13 @@ const Holdings = () => {
       <div className="row">
         <div className="col">
           <h5>
-            29,875.<span>55</span>{" "}
+            29,875.<span>55</span>
           </h5>
           <p>Total investment</p>
         </div>
         <div className="col">
           <h5>
-            31,428.<span>95</span>{" "}
+            31,428.<span>95</span>
           </h5>
           <p>Current value</p>
         </div>

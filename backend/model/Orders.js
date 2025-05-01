@@ -1,4 +1,5 @@
 const { Schema } = require("mongoose");
+const mongoose = require("mongoose");
 
 const orderSchema = new Schema({
   name: String,

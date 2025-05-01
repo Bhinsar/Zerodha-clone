@@ -1,7 +1,20 @@
-import React from "react";
-import { positions } from "../data/data";
-
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 const Positions = () => {
+  const [positions, setPositions] = useState([]);
+
+  const fetchPositions = async () => {
+    try {
+      const response = await axios.get("http://localhost:8080/get-all-positions");
+      setPositions(response.data);
+    } catch (error) {
+      console.error("Error fetching positions:", error);
+    }
+  }
+
+  useEffect(() => {
+    fetchPositions();
+  }, []);
 
   return (
     <>
